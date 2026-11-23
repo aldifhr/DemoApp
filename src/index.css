@@ -1,0 +1,128 @@
+:root {
+  color-scheme: light dark;
+
+  --surface: #ffffff;
+  --surface-alt: #f4f6fb;
+  --text: #1a2138;
+  --muted: #55607a;
+  --border: #dde3ef;
+  --brand: #2f5fe0;
+  --on-brand: #ffffff;
+
+  --radius: 12px;
+  --space: clamp(1rem, 4vw, 2rem);
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #0b1020;
+    --surface-alt: #141b2e;
+    --text: #eef2ff;
+    --muted: #a7b2cd;
+    --border: #2a3452;
+    --brand: #8ab4ff;
+    --on-brand: #0b1020;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--surface);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+code {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header,
+.app-footer {
+  padding: var(--space);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-footer {
+  margin-top: auto;
+  border-bottom: none;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 650;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 6px;
+  background: var(--brand);
+}
+
+.app-main {
+  display: flex;
+  align-items: center;
+  padding: clamp(2rem, 8vw, 5rem) var(--space);
+}
+
+.intro {
+  max-width: 36rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--brand);
+  font-weight: 650;
+}
+
+.intro h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.intro-copy {
+  margin: 0;
+  color: var(--muted);
+}
