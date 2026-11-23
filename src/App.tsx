@@ -1,3 +1,5 @@
+import About from './about'
+
 export default function App() {
   return (
     <div className="app-shell">
@@ -9,14 +11,7 @@ export default function App() {
       </header>
 
       <main className="app-main">
-        <section className="intro" aria-labelledby="intro-title">
-          <p className="eyebrow">Vite + React + TypeScript</p>
-          <h1 id="intro-title">Your app is ready.</h1>
-          <p className="intro-copy">
-            Start building here. Edit <code>src/App.tsx</code> and save to see
-            your changes instantly.
-          </p>
-        </section>
+        <About />
       </main>
 
       <footer className="app-footer">
