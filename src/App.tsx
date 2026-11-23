@@ -1,4 +1,4 @@
-import About from './about'
+import Status from './status'
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       </header>
 
       <main className="app-main">
-        <About />
+        <Status />
       </main>
 
       <footer className="app-footer">
