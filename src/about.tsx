@@ -10,6 +10,7 @@ export default function About() {
       </p>
 
       <div>
+        <h2>Browser order check</h2>
         <h2>Built for a clear start</h2>
         <p className="intro-copy">
           The app keeps its entry point and main page straightforward, so you
