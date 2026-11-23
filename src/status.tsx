@@ -1,3 +1,5 @@
+ // This is the Status page.
+// The status is static demo data.
 export default function Status() {
   return (
     <section className="intro" aria-labelledby="status-title">
