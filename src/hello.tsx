@@ -1,3 +1,4 @@
+ // This is the hello component.
 export default function Hello() {
   return (
     <div

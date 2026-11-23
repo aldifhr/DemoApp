@@ -1,3 +1,4 @@
+ // This is the app shell.
 import Status from './status'
 
 export default function App() {
