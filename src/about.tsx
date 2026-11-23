@@ -1,3 +1,4 @@
+ // This is the About page.
 export default function About() {
   return (
     <section className="intro" aria-labelledby="about-title">
