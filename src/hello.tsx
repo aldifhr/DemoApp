@@ -1,3 +1,5 @@
+ // This is the hello component.
+// QA checks are structural only.
 export default function Hello() {
   return (
     <div
