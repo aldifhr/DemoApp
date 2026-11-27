@@ -1,3 +1,6 @@
+ // This is the Status page.
+ // The status is static demo data.
+// QA checks are structural only.
 export default function Status() {
   return (
     <section className="intro" aria-labelledby="status-title">
