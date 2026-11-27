@@ -1,3 +1,4 @@
+ // Chat smoke marker 2026-11-27
  // Smoke check two
  // This is the hello component.
 // QA checks are structural only.
