@@ -1,3 +1,4 @@
+<!-- Smoke test marker 2026-11-27 -->
 # Demo
 
 Demo App is a lightweight React, TypeScript, and Vite starting point for building web experiences.
